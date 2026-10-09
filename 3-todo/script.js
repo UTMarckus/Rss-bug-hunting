@@ -32,7 +32,7 @@ function toggleTask(id) {
 }
 
 function deleteTask(id) {
-  tasks = tasks.filter((t) => !(t.done && t.id == id));
+  tasks = tasks.filter((t) => t.id !== id);
   render();
 }
 
